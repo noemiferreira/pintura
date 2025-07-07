@@ -1,98 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pintura - Arte e Inspiração</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            background: #fffaf0;
-            color: #333;
-        }
-        header {
-            background-color: #6b4226;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.3);
-        }
-        main {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2 {
-            border-bottom: 3px solid #6b4226;
-            padding-bottom: 10px;
-            color: #6b4226;
-        }
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
-            gap: 20px;
-        }
-        .gallery img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-        footer {
-            background-color: #6b4226;
-            color: white;
-            text-align: center;
-            padding: 15px 10px;
-            font-size: 0.9rem;
-            margin-top: 60px;
-        }
-        @media (max-width: 600px) {
-            header {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte da Pintura</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        Pintura - Arte e Inspiração
+        <h1>Bem-vindo ao Mundo da Pintura</h1>
+        <p>Explore diferentes estilos, artistas e técnicas</p>
     </header>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#estilos">Estilos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+    </nav>
     <main>
-        <section>
-            <h2>Sobre Pintura</h2>
-            <p>
-                A pintura é uma das formas mais antigas e belas de expressão artística. 
-                Desde a antiguidade, os artistas usam cores, texturas e técnicas variadas para transmitir emoções, contar histórias e registrar momentos. 
-                Seja com tinta a óleo, aquarela ou acrílica, a pintura permite que a criatividade ganhe vida.
-            </p>
+        <section id="sobre">
+            <h2>Sobre a Pintura</h2>
+            <p>A pintura é uma das formas de arte mais antigas e expressivas da humanidade. Desde as cavernas pré-históricas até os museus contemporâneos, a pintura continua a inspirar, emocionar e contar histórias.</p>
         </section>
-        <section>
-            <h2>Galeria de Pinturas</h2>
+
+        <section id="estilos">
+            <h2>Estilos de Pintura</h2>
+            <ul>
+                <li><strong>Realismo:</strong> Retrata o mundo como ele é.</li>
+                <li><strong>Impressionismo:</strong> Enfatiza luz e cor com pinceladas soltas.</li>
+                <li><strong>Expressionismo:</strong> Foca na emoção e na subjetividade.</li>
+                <li><strong>Abstrato:</strong> Usa formas e cores para criar composições não representativas.</li>
+            </ul>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria de Obras</h2>
             <div class="gallery">
-                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Pintura abstrata colorida" />
-                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Pintura em aquarela" />
-                <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?auto=format&fit=crop&w=400&q=80" alt="Pincel e tinta" />
-                <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=400&q=80" alt="Pintura moderna" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Mona_Lisa_by_Leonardo_da_Vinci_from_C2RMF_retouched.jpg/640px-Mona_Lisa_by_Leonardo_da_Vinci_from_C2RMF_retouched.jpg" alt="Mona Lisa">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/The_Starry_Night.jpg" alt="Noite Estrelada">
+                <img src="https://upload.wikimedia.org/wikipedia/en/7/74/Guernica.jpg" alt="Guernica">
             </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Para mais informações, envie um e-mail para: <a href="mailto:contato@pinturaarte.com">contato@pinturaarte.com</a></p>
         </section>
     </main>
     <footer>
-        © 2025 Pintura - Todos os direitos reservados
+        <p>&copy; 2025 Arte da Pintura. Todos os direitos reservados.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
